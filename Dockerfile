@@ -1,8 +1,6 @@
 FROM python
 
 RUN pip3 install streamlit
-COPY hello.py /src/
+RUN git clone https://github.com/LuizOtavioPolido/aula-darlon-docker
 
-WORKDIR /src/
-
-CMD ["streamlit", "run", "/src/hello.py"]
+CMD ["streamlit", "run", "/aula-darlon-docker/hello.py"]
