@@ -1,0 +1,1 @@
+docker build -t st:0.1 .
